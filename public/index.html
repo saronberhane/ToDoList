@@ -1,0 +1,50 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="text" id="input">
+        <button id="get">get</button> 
+        <button id="post">post</button>
+
+    </form>
+   
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+
+    <!-- linking the css -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div id="homePage">
+        <h1>Welcome !</h1>
+        <p>Login or create an account to access the To-Do List.</p>
+        <div class="getin">
+            <div id="login-link-container">
+                <button type="submit" id="show-login"><a href="#" onclick="showLogin()">Login</a></button>
+            </div>
+            <div id="create-account-link-container">
+                <a type="submit" id="show-createAccount" href="#"  onclick="showCreateAccount()">Create Account</a>
+            </div>
+        </div>    
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
