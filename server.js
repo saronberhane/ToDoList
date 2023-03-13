@@ -24,11 +24,7 @@ app.set("views",publicPath)
 
 // /////////////////////////////////////
 
-
-// app.get('/login',(req,res) => {
-//     res.render('login')
-// })
-
+// home page routes
 app.get('/login', (req,res) => {
     res.sendFile(__dirname + '/public/login.html')
 })
@@ -38,10 +34,6 @@ app.get('/signup', (req,res) => {
 })
 
 
-// app.post('/formPost', (req,res) => {
-//     console.log(req.body) //the data we get is in the body of request
-
-// })
 
 
 app.post('/signup', async (req,res)=>{
@@ -75,22 +67,5 @@ app.post('/login', async (req,res)=>{
 
     }
 })
-
-// app.get('/signup',(req,res) => {
-//     res.render('signup.html')
-// })
-
-
-
-// API ROUTES
-// app.get('/signup', (req,res) => {
-
-//     res.sendFile(__dirname + '/public/signup.html')
-// })
-
-// app.post('/formPost', (req,res) => {
-//     console.log(req.body) //the data we get is in the body of request
-
-// })
 
 app.listen(port, () => console.log(`Server has started at http://localhost:${port}`))
